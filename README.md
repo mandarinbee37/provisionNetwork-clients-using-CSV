@@ -1,3 +1,5 @@
+provisionNetworkClients using CSV files
+
 Use the Meraki API call, provisionNetworkClients, to provision devices using their MAC Address and a friendly name, by importing information from a CSV file.
 
 For this script we require that the following libraries are imported: import meraki import csv import os from dotenv import load_dotenv
