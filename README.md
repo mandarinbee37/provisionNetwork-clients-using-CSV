@@ -2,6 +2,9 @@ ProvisionNetworkClients using CSV files
 
 Use the Meraki API call, provisionNetworkClients, to provision devices using their MAC Address and a friendly name, by importing information from a CSV file.
 
+Cisco has documentation on how to get started with the API:
+- https://developer.cisco.com/meraki/api-v1/getting-started/
+
 For this script we require that the following libraries are imported: 
 import meraki 
 import csv 
@@ -12,7 +15,8 @@ This script uses dotenv to load environment variables. These can be added to an 
 
 If using terminal use the following syntax: export MERAKI_API_KEY=<API_KEY>. You will also need to export your NETWORK_ID.
 
-If unable to use an .env variable for whatever reason, you can enter your API key directly, though this is not recommended. 
+If unable to use an .env variable for whatever reason, you can enter your API key directly, though this is not recommended due to security issues. As per Cisco's Developer Hub Documentation the best practice is to use an .env variable. 
+- https://developer.cisco.com/meraki/api-v1/authorization/
 
 The CSV file needs to contain the MAC Address of the device and a friendly name. Please note the row index.
 
