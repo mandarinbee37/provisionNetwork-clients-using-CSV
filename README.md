@@ -19,3 +19,5 @@ The CSV file needs to contain the MAC Address of the device and a friendly name.
 ![image](https://github.com/mandarinbee37/provisionNetwork-clients-using-CSV/assets/166555204/cb998d28-9106-41db-8855-589aa54f7342)
 
 For example, the MAC Address field is row[0] and the name field is row[3] in this case (and in the script). You will need to manually adjust the row index for this script by editing it.
+
+The default path for the CSV file is "~/sample_data.csv", if you want to use this path, please keep your CSV file in your home directory and name is "sample_data.csv".
